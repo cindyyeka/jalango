@@ -623,3 +623,129 @@ footer h2{
     left:0;
   }
 }
+
+/* ===== ANIMASI JAVASCRIPT SCROLL ===== */
+.about,
+.empathize-section,
+.define-section,
+.ideate-section,
+.prototype-section,
+.test-section,
+.dark-cards article,
+.define-grid article,
+.ideate-preview,
+.empathize-preview{
+  opacity:0;
+  transform:translateY(35px);
+  transition:all .8s ease;
+}
+
+.about.show,
+.empathize-section.show,
+.define-section.show,
+.ideate-section.show,
+.prototype-section.show,
+.test-section.show,
+.dark-cards article.show,
+.define-grid article.show,
+.ideate-preview.show,
+.empathize-preview.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* ===== TEST SECTION ===== */
+.test-section{
+  padding:110px 20px;
+}
+
+.test-content{
+  max-width:1100px;
+  margin:48px auto 0;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:36px;
+  align-items:start;
+}
+
+.test-left img{
+  width:100%;
+  height:420px;
+  object-fit:cover;
+  border-radius:28px;
+  border:1px solid rgba(216,230,255,.18);
+  box-shadow:0 24px 60px rgba(0,0,0,.25);
+}
+
+.tester-card,
+.test-card{
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(216,230,255,.18);
+  border-radius:28px;
+  padding:28px;
+  box-shadow:0 20px 45px rgba(0,0,0,.18);
+}
+
+.tester-card{
+  margin-top:22px;
+}
+
+.tester-card h3,
+.test-card h3{
+  color:white;
+  font-size:23px;
+  margin-bottom:12px;
+}
+
+.tester-card p,
+.tester-card i,
+.test-card li,
+.test-card td{
+  color:#C7D7EA;
+  line-height:1.8;
+}
+
+.test-card{
+  margin-bottom:26px;
+}
+
+.test-card ul{
+  padding-left:20px;
+}
+
+.test-card table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:18px;
+  overflow:hidden;
+  border-radius:18px;
+}
+
+.test-card th{
+  background:rgba(255,255,255,.12);
+  color:white;
+  text-align:left;
+  padding:14px;
+  font-size:14px;
+}
+
+.test-card td{
+  padding:14px;
+  border-bottom:1px solid rgba(255,255,255,.12);
+  font-size:14px;
+}
+
+.success{
+  color:#4ADE80;
+  font-weight:800;
+}
+
+@media(max-width:900px){
+  .test-content{
+    grid-template-columns:1fr;
+  }
+
+  .test-left img{
+    height:auto;
+  }
+}
